@@ -43,9 +43,45 @@
 .f-r {
 	float:right;
 }
+.hoverParent {
+	position:relative;
+}
+.hoverContent {
+	display:none;
+	position:absolute;
+}
+#work .hoverParent:hover .hoverContent {
+	background-color:#FFF;
+  	text-align:center;
+  	color:#6FC067;
+  	width:100%;
+  	height:100%;
+ 	display:block;
+	top:0;
+	left:0;
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	border-radius:50%;
+}
+#about .hoverParent:hover .hoverContent {
+	background-color:#FFF;
+  	text-align:center;
+  	color:#6FC067;
+  	width:80%;
+  	height:100%;
+ 	display:block;
+	top:0;
+	left:48px;
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	border-radius:50%;
+}
 
 /*====== SITE STRUCTURE ======*/
 
+html, body {
+	height:100%;
+}
 [class*="col-"] {
 	float:left;
 	padding-right:20px;
@@ -118,6 +154,12 @@ h3 {
 #about h3 {
 	margin-bottom:6px;
 }
+#about .hoverContent h3 {
+	padding-top:126px;
+}
+footer h3 {
+	padding-top:34px;
+}
 
 /*=== p ===*/
 
@@ -127,6 +169,11 @@ p {
 	line-height:28px;
 	width:80%;
 	margin:0 auto;
+}
+footer p {
+	font-size:16px;
+	line-height:20px;
+	padding-top:70px;
 }
 
 /*=== a ===*/
@@ -179,6 +226,15 @@ header li, #about li {
 header li:nth-child(-n+4) {
 	padding-right:20px;
 }
+#about li {
+	margin:40px 0;
+}
+footer ul {
+	margin-top:40px;
+}
+footer li {
+	margin-bottom:20px;
+}
 
 /*====== MEDIA ======*/
 
@@ -196,6 +252,46 @@ header li:nth-child(-n+4) {
 #about li img {
 	width:84px;
 	border-radius:42px;
+}
+.facebook {
+	background-image:url("../img/facebook-sprite.png");
+	background-repeat:no-repeat;
+	padding:36px 70px;
+	background-position:0 0;
+}
+.facebook:hover {
+	background-position:0 -90px;
+}
+.twitter {
+	background-image:url("../img/twitter-sprite.png");
+	background-repeat:no-repeat;
+	padding:36px 46px;
+	background-position:0 0;
+}
+.twitter:hover {
+	background-position:0 -90px;
+}
+#about .col-1-2 > div {
+	height:100%;
+	width:100%;
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	border-radius:50%;
+}
+.hoverParent img {
+	width:100%;
+}
+#headshot-one {
+	background: url("../img/headshot-one.png") no-repeat center;
+}
+#headshot-two {
+	background: url("../img/headshot-two.png") no-repeat center;
+}
+/*#headshot-three {
+	background: url("../img/headshot-three.png") no-repeat center;
+}*/
+#headshot-four {
+	background: url("../img/headshot-four.png") no-repeat center;
 }
 
 /*====== BACKGROUNDS ======*/
